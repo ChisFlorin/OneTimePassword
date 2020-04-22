@@ -12,7 +12,7 @@ namespace OneTimePassword
         {
             UserId = userId;
             UserDate = useDate;
-            ValidUntil = DateTime.Now.AddMinutes(Configuration.PasswordDuration);
+            ValidUntil = DateTime.Now.AddSeconds(Configuration.PasswordDuration);
         }
 
         public int UserId { get; set; }
